@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post a Skill – SkillSwap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-brand">SkillSwap <span class="tagline">Exchange Skills. Grow Together.</span></div>
+    <ul class="nav-links">
+      <li><a href="explore.html" class="nav-link">Explore Skills</a></li>
+      <li><a href="post.html" class="nav-link active">Post Skill</a></li>
+      <li><a href="requests.html" class="nav-link">Requests</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2 class="page-title">Post a Skill</h2>
+    <p class="page-subtitle">Share what you can teach and what you'd like to learn in return.</p>
+
+    <form class="skill-form" id="skill-form">
+      <div class="form-group">
+        <label for="user-name">Your Name</label>
+        <input type="text" id="user-name" placeholder="e.g. Rahul Sharma" required>
+      </div>
+      <div class="form-group">
+        <label for="skill-offer">Skill You Offer</label>
+        <input type="text" id="skill-offer" placeholder="e.g. Python Programming" required>
+      </div>
+      <div class="form-group">
+        <label for="skill-want">Skill You Want</label>
+        <input type="text" id="skill-want" placeholder="e.g. Graphic Design" required>
+      </div>
+      <div class="form-group">
+        <label for="skill-description">Description</label>
+        <textarea id="skill-description" rows="4" placeholder="Tell us more about your skill..." required></textarea>
+      </div>
+      <button type="submit" class="btn">Post Skill</button>
+    </form>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <h3 id="modal-title">Skill Posted!</h3>
+      <p id="modal-message">Your skill has been posted.</p>
+      <button class="btn" id="modal-close-btn">OK</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">Made with ❤️ by students | SkillSwap &copy; 2026</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
